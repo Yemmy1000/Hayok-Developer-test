@@ -10,7 +10,7 @@ if ( ($_POST['email']!="") && ($_POST['password']!="")){
 	
 	$hw_email = $mycon->real_escape_string($_POST['email']);
 	$hw_password = $mycon->real_escape_string($_POST['password']);
-	$hw_name = $mycon->real_escape_string($_POST['firstname']);
+	$hw_name = $mycon->real_escape_string($_POST['name']);
 	$hw_sname = $mycon->real_escape_string($_POST['surname']);
 	$hw_gender = $mycon->real_escape_string($_POST['gender']);
 	$hw_age = $mycon->real_escape_string($_POST['age']);
