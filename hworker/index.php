@@ -57,36 +57,37 @@ ob_start();
             <div class="layout-px-spacing">
                 <div class="row layout-top-spacing">
 
-                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
-                        <div class="widget widget-one">
-                            <div class="widget-heading">
-                                <h6 class="">Patient</h6>
-                            </div>
-                            <div class="w-chart">
-                                <div class="w-chart-section">
-                                    <div class="w-detail">
-                                        <p class="w-title">Total Male</p>
-                                        <p class="w-stats"><?php echo get_Total_Male_Patient(); ?></p>
-                                    </div>
-                                    <div class="w-chart-render-one">
-                                        <div id="total-users"></div>
-                                    </div>
-                                </div>
+                                 
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 layout-spacing">
+                        <div class="widget widget-five">
+                            <div class="widget-content">
 
-                                <div class="w-chart-section">
-                                    <div class="w-detail">
-                                        <p class="w-title">Total Female</p>
-                                        <p class="w-stats"><?php echo get_Total_Female_Patient(); ?></p>
-                                    </div>
-                                    <div class="w-chart-render-one">
-                                        <div id="paid-visits"></div>
+                                <div class="w-content">
+                                    <div class="">                                            
+                                        <p class="task-left"><?php echo get_Total_Male_Patient(); ?></p>
+                                        <p class="task-completed"><span>Male Patient</span></p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 layout-spacing">
+                        <div class="widget widget-five">
+                            <div class="widget-content">
+
+                                <div class="w-content">
+                                    <div class="">                                            
+                                        <p class="task-left"><?php echo get_Total_Female_Patient(); ?></p>
+                                        <p class="task-completed"><span>Female Patient</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 layout-spacing">
                         <div class="widget widget-card-four">
                             <div class="widget-content">
                                 <div class="w-content">
@@ -108,7 +109,7 @@ ob_start();
                     </div>
 
 
-                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 layout-spacing">
                         <div class="widget widget-five">
                             <div class="widget-content">
 
