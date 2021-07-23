@@ -122,7 +122,7 @@ ob_start();
                                                                                 <div class="col-xl-2 col-lg-12 col-md-4">                                                                                    
                                                                                     <input type="hidden" class="form-control mb-4" name="registered_by" id="registered_by" value="<?php echo $hw_id ?>" placeholder="" required>                   
                                                                                     <label>Passport</label>                                                                                    
-                                                                                    <input type="file" class="form-control" id="profile-img" name="image" required>
+                                                                                    <input type="file" class="form-control" id="profile-img" name="image" style="pointer-events: none;" required>
                                                                                     <canvas id="snapshot" width=150 height=150></canvas>
                                                                                     <span type="badge" class="badge badge-info" id="takePicture">Take a Picture</span>
                                                                                     <!-- <img src="" id="profile-img-tag"  height="100px" class="img-responsive" style="height: 100px !important" /> -->

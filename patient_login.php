@@ -1,13 +1,6 @@
 <?php
 ob_start();
 //include "./gen/allfunct.php";
-if(isset($_GET['msg']) && $_GET['msg'] != ''){
-    $msg = $_GET['msg'];
-}else{
-    $msg  ='';
-}
- 
-
 
 ?>
 
@@ -17,7 +10,7 @@ if(isset($_GET['msg']) && $_GET['msg'] != ''){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
-    <title>HAYOK-DEV-TSET - Login Page</title>
+    <title>HAYOK-DEV-TSET - Patient Login Page</title>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
@@ -42,39 +35,22 @@ if(isset($_GET['msg']) && $_GET['msg'] != ''){
                 <div class="form-container">
                     <div class="form-content">
 
-                        <h1 class="">Health Worker Sign In</h1>
-                        <p class="">Log in to your account to continue.</p>
+                        <h1 class="">Patient Login</h1>
+                        <p class="">Login to your account with your Phone No as Username & Password.</p>
 
-                        <?php 
-                            $message = '';
-                            if($msg == '') { 
-                                $message .= ' ';
-                            }else{
-                                $message .= '<div class="alert alert-success alert-dismissible">'
-                                .'<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>'
-                                .'<h4><i class="icon fa fa-success"></i> You are welcome! Kindly login.</h4>'
-                                .'</div> ';
-                            }
-                        
-                        ?>
-                            <div class="row">
-                                <div class="col-md-12" style="float:none; margin-left:auto; margin-right:auto;">
-                                    <?php echo  $message; ?>
-                                </div>
-                            </div>
                             <div class="alert alert-danger alert-dismissible" style="display:none;">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                <h6>Sorry, kindly try again!</h6>
+                                <h6>Sorry, kindly try this for example: <br/> usn/pwd 0805423476 </h6>
                             </div>
                         
                         <form action="#" method="POST" class="text-left form-signin needs-validation" novalidate="" name="logform" id="logform">
                             <div class="form">
-                                <input type="hidden" id="usertype" name="usertype" class="form-control" value="healthworker" required>
+                                <input type="hidden" id="usertype" name="usertype" class="form-control" value="patient" required>
 
                                 <div id="username-field" class="field-wrapper input">
-                                    <label for="emailusername">EMAIL/USERNAME</label>
+                                    <label for="phone">PHONE</label>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                                    <input id="emailusername" name="emailusername" type="text" class="form-control" placeholder="" required>
+                                    <input id="phone" name="phone" type="text" class="form-control" placeholder="" required>
                                 </div>
 
                                 <div id="password-field" class="field-wrapper input mb-2">
@@ -88,17 +64,10 @@ if(isset($_GET['msg']) && $_GET['msg'] != ''){
                                 </div>
                                 <div class="d-sm-flex justify-content-between">
                                     <div class="field-wrapper">
-                                        <button type="button" id="hworkerlogin" class="btn btn-primary hworkerlogin" value="">Log In</button>
+                                        <button type="button" id="patientlogin" class="btn btn-secondary patientlogin" value="">Log In</button>
                                     </div>
                                 </div>
-
-                                <div class="division">
-                                      <span>OR</span>
-                                </div>
-
-   
-
-                                <p class="signup-link">Not registered ? <a href="register.php">Create an account</a></p>
+      
 
                             </div>
                         </form>
