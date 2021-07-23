@@ -32,7 +32,7 @@ ob_start();
                 <div class="form-container">
                     <div class="form-content">
 
-                        <h1 class="">Register</h1>
+                        <h1 class="">Health Worker Registration</h1>
                         <p class="signup-link register">Already have an account? <a href="index.php">Log in</a></p>
                         <form action="functs/reg.php" method="POST" class="text-left form-signin needs-validation" novalidate="" name="regform" id="regform">
                             <div class="form">
@@ -103,8 +103,8 @@ ob_start();
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
                                         <select class="form-control" id='gender' name='gender' required>
                                                 <option value="">&nbsp;&nbsp; --Select --</option>
-                                                <option value="Male">Male</option>
-                                                <option value="Female">Female</option>                                                                                  
+                                                <option value="M">Male</option>
+                                                <option value="F">Female</option>                                                                                  
                                             </select>
                                         </div>
 
@@ -140,7 +140,7 @@ ob_start();
                                 <div class="field-wrapper terms_condition">
                                     <div class="n-chk">
                                         <label class="new-control new-checkbox checkbox-primary">
-                                          <input type="checkbox" class="new-control-input">
+                                          <input type="checkbox" class="new-control-input" required>
                                           <span class="new-control-indicator"></span><span>I agree to the <a href="javascript:void(0);">  terms and conditions </a></span>
                                         </label>
                                     </div>
